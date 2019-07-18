@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SC2 S-Rank |VODs</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <header>
+        <a href="index.html"><img src="./images/sc2logo1.png" alt="Logo" style="width: 40%;"></a>
+   </header>
+   <div class="content">
+        <nav>
+                <a href="index.html">Rankings</a>
+           <div class="topnav-centerd"><a href="VODs.html">VODs</a></div>
+           <div class="topnav-right"><a href="about.html">About</a></div>
+           </nav>
+     <section>    
+          <article >
+              
+                 <div class="vod">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/h0UBfmOJYO4" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="vod">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIHUXLxHtB4" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>   
+            <div class="vod">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KNGVu4A67LA" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="vod">    
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zV5OuIW3CpQ" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>   
+            <div class="vod">   
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/S0QHyolErqc" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <div class="vod">   
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sStwcVkKBw8" frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>                  
+            <div class="vod">   
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ff4VIghrTMg" frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>                  
+            <div class="vod">   
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5N9fYURY-Jk" frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>                  
+            <div class="vod">   
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/83MUTcvi3jk" frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>                  
+            <div class="vod">   
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OfjZexhKKt4" frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>                  
+
+
+          </article>
+          <aside>
+                  <div id="vodSelector">
+                    <div class="title">Official Vods</div>
+                    <div>
+                        <div class="title2"><span onclick="currentVideo(1)"><span>&#9658;</span> Stats vs Serral</span></div> 
+                            
+                    </div>
+                    <div>
+                        <div class="title2"><span onclick="currentVideo(2)"><span>&#9658;</span>Maru vs Impact</span></div>    
+                            
+                    </div>
+                    <div>
+                        <div class="title2"><span onclick="currentVideo(3)"><span>&#9658;</span>Dark vs Trap</span></div>
+                           
+                    </div>
+                    <div>
+                        <div class="title2"><span onclick="currentVideo(4)"><span>&#9658;</span>TY vs Maru</span></div>
+                            
+                    </div>
+                    <div>
+                        <div class="title2"><span onclick="currentVideo(5)"><span>&#9658;</span>INoVation vs sOs</span></div>
+                
+                    </div>
+                    <div>
+                        <div class="title2"><span onclick="currentVideo(6)"><span>&#9658;</span>Reynor vs Serral</span></div>
+                
+                    </div>
+                    <div>
+                        <div class="title2"><span onclick="currentVideo(7)"><span>&#9658;</span>soO vs Stats</span></div>
+                
+                    </div>
+                    <div>
+                        <div class="title2"><span onclick="currentVideo(8)"><span>&#9658;</span>Solar vs Maru</span></div>
+                
+                    </div>
+                    <div>
+                        <div class="title2"><span onclick="currentVideo(9)"><span>&#9658;</span>Classic vs Rogue</span></div>
+                
+                    </div>
+                    <div>
+                        <div class="title2"><span onclick="currentVideo(10)"><span>&#9658;</span>Cure vs Zest</span></div>
+                
+                    </div>
+            </div>        
+          </aside>
+         
+</section>
+</div>
+
+<footer>
+   <a href="404.html">Impressum</a> 
+   <a href="404.html">Contact Us</a>
+   <a href="404.html">Terms of Service</a> <br>
+   The Content of this Webpage are Copyrighted &copy;All Rights Reserved
+</footer>
+
+<script>
+        var videoIndex = 1;
+        showVideos(videoIndex);
+        
+        function currentVideo(n) {
+            showVideos(videoIndex = n);
+        }
+
+        function showVideos(n) {
+            var i;
+            var videos = document.getElementsByClassName("vod");
+            
+            if(n > videos.length) {
+                videoIndex = 1
+            }
+             if(n < 1){
+                videoIndex = videos.length
+             }
+
+             for(i=0; i<videos.length; i++) {
+                 videos[i].style.display ="none";
+             }
+
+         videos[videoIndex-1].style.display="block";
+            
+        }
+
+
+    </script>
+    <!-- <script>
+            
+
+            function expand(){
+            var video = document.getElementById("vod").value;
+
+            function currentVideo(n) {
+            showVideos(videoIndex = n);
+            
+            let i =0;
+            setInterval(function(){
+
+                video[videoIndex-1].style.height = i +"px";
+                
+                if(i < 150){
+                    video[videoIndex-1].style.height = i +"px";
+                    i = i + 1;
+                }
+            },5) /* <<<intervall update */
+                
+        }
+    </script> -->
+
+
+</body>
+</html> 

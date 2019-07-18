@@ -1,0 +1,412 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/BannerBG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+   
+    text-align: center;
+    font-size: 3vw;
+    height: 100%;
+    color: white;
+    /* background-image: url(../images/BannerBG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+ */
+    
+    
+}
+nav{
+    background: #808080dd;
+    padding: 20px;
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+    background-color: rgba(71, 71, 71, 0.8);
+    overflow: hidden;
+}
+nav a{
+    float: left;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 14px 126px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 3vw;
+    letter-spacing: 3px;
+
+}
+.topnav-centerd a{
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.topnav-right {
+    float: right;
+
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: rgb(39, 100, 190);
+}
+
+aside{
+    float: left;
+    width: 45%;
+    height: 100%;
+    background: #ccd2d3dd;
+    padding: 30px;
+    margin-right: 5%;
+    
+    /* overflow-y: scroll; */
+}
+.reader{display: none;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    
+    
+}
+article{
+    float: left;
+    padding: 35px;
+    width: 45%;
+    background: #aaaaaadd;
+    height: 100%;
+    margin-left: 5%;
+    overflow-y: auto;
+    
+}
+
+.infobox>div{
+    display: table;
+    width: 100%;
+}
+.infobox img{
+    width: 3vw;
+    height: 3vwpx;
+}
+.infobox>div>div{
+    float: left;
+    height: inherit;
+    padding: 5px;
+}
+.infoboxH{
+    float: left;
+    width: 50%;
+    font-size: 3vw;
+    background-color: #ebf7ffdd;
+}
+.infoboxB{
+    float: left;
+    width: 50%;
+    font-size: 2vw;
+}
+.infobox-description{
+    font-weight: bold;
+    text-align: right;
+}
+.infobox-background{
+    background-color: #acbbc4dd;
+
+}
+
+#selector{
+    float: left;
+    width: 100%;
+    /* height: 430px; */
+    height: 100%x;
+}
+
+
+.rankings {
+    width: 100%;
+    max-height: 100%;
+    
+
+    
+}
+.rankings>div{
+    font-size: 3vw;
+    font-weight: 600;
+   /*  margin-left: 5%; */
+    padding-left: 5%;
+    padding-right: 5%;
+   /*  width: 50%; */
+    display: table;
+    text-align: center;
+    color: white;
+    width: 100%;
+    
+
+   
+    
+}
+
+.chooser{
+    text-decoration: none;
+    /* overflow: hidden; */
+}
+.chooser>li:nth-child(odd){
+    
+        background-color: rgba(230, 230, 230, 0.5);
+}
+.chooser>li>a{
+    font-size: 3.2vw;
+    color: black;
+    cursor: pointer;
+
+}
+.chooser>li>a:hover{
+    color: white;
+    background-color: #2f4c9c;
+    border-radius: 10%;
+}
+.playerTab{
+    text-decoration: none;
+    
+}
+section:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.about{
+    padding: 30px;
+    background-color: #92e0ff5e;
+    border-radius: 25px 25px 25px 25px;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: 800;
+    color: #3f3f3f;
+    text-align: center;
+    box-shadow: 0px 0px 30px 30px rgb(114, 112, 124);
+}
+.about>div{
+    font-size: 1.4vw;
+    font-family:sans-serif;
+}
+.about a{
+    text-decoration: none;
+}
+.filler{
+    float: left;
+}
+footer{
+    background: #bbbbbbc0;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    clear: both;
+    font-size: 1vw;
+    width: 90%;
+    margin-left: 5%;
+}
+footer>a{
+    text-decoration: none;
+    color: #333333;
+    font-size: 1.2vw;
+    font-weight: 700;
+    padding-left: 30px;
+}
+footer>a:hover{
+    color: #333333;
+}
+
+/* #vodSelector{
+    overflow: auto;} */
+.vod{
+    border: solid black 4px;
+    /* display: none; */
+    /* float: left; */
+    /* height: 100%; */
+    /* max-height: 1400px; */
+    position: relative;
+    width: 100%;
+    height: o;
+    padding-bottom: 50%
+}
+.vod iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.title{
+    padding: 14px;
+    text-align: center;
+    font-size: 3.2vw;
+    font-weight: 700;
+    color:#000000a2;
+}
+.title2{
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 10px;
+}
+.title2>span{
+    background-color: rgba(255, 255, 255, 0.603);
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.521);
+}
+.title2>span:hover{
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+.title3{
+        text-align: center;
+        font-size: 3vw;
+        font-style: initial;
+        font-weight: 900;
+        color: #000000e0;
+        letter-spacing: 3px;
+        width: 100%;
+
+}
+/* ///////////////////////////Slider/////////////////////////// */
+
+.mySlides{display: none}
+
+img {vertical-align: middle;}
+
+/*Slideshow container*/
+.sildeshow-container{
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-size:18px;
+    transition: 0.6s ease;
+    /*CSS transitions allows you to change 
+    property values smoothly, over a given duration.*/
+    /*ease - specifies a transition effect with 
+    a slow start, then fast, then end slowly (this is default)*/
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/*Postion the "next button" to the Right*/
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*On hover, add a black background 
+ with a little bit see throught*/
+ .prev:hover, .next:hover{
+     background-color: rgba(0, 0, 0, 0.8)
+ }
+
+ /*Caption text*/
+ .text{
+     /* color: rgb(255, 255, 255); */
+     font-size: 2vw;
+     padding: 0;/* 1px 4px; */
+     position: absolute;
+     bottom: 3px;
+     width: 100%;
+     text-align: center;
+     font-weight: 700;
+     color: rgba(255, 255, 255, 0.9);
+     margin: 0;
+}
+.text span{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+ /*Number text (1/3 etc)*/
+ .numbertext{
+     color: aliceblue;
+     font-size: 1.2vw;
+     padding: 8px 12px;
+     position: absolute;
+     top: 0;
+ }
+
+ /* The dots/bullets/indicators */
+ .dot {
+     cursor: pointer;
+     height: 2vw;
+     width: 2vw;
+     margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+ }
+
+ .active, .dot:hover, .playerTap:hover{
+    background-color:  #2f4c9c;
+    color: white;
+ }
+
+ /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+
+@media (max-width: 700px){
+  nav, article, aside, footer{
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    nav, .topnav-right{
+        float: none;
+        display: block;
+    }
+    .topnav-centerd a{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+}
